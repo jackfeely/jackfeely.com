@@ -1,12 +1,28 @@
 body {
-  /*margin: 50px;*/
   text-align: center;
-  margin: 0px 200px 0px 200px;
-
+  margin: 0px 250px 0px 250px;
+  font-family: 'Abel', sans-serif;
 }
 
-img {
+#head-shot {
   border-radius: 50%;
+}
+
+span {
+  font-size: 17px;
+}
+
+#skills-list {
+  column-count: 3;
+  list-style: none;
+}
+
+li {
+  font-size: 17px;
+}
+
+.project-title {
+  font-style: italic;
 }
 
 .project-div {
@@ -15,13 +31,16 @@ img {
   margin-bottom: 50px;
 }
 
+.project-div:hover {
+  background: #F0F8FF;
+}
+
 .project-link {
   color: black;
   text-decoration: none;
 }
 
-
-
-h4 {
-  font-style: italic;
+.project-text {
+  display: inline-block;
+  margin-bottom: 20px;
 }

@@ -3,43 +3,55 @@
 <head>
   <title>jackfeely.com</title>
   <base target="_blank">
+  <link href="https://fonts.googleapis.com/css?family=Abel" rel="stylesheet">
   <link rel="stylesheet" type="text/css" href="styles.css">
 
 </head>
 <body>
-  <h1>Jack Feely</h1>
-  <img src='./images/head-shot.png' alt="Head Shot" height='100px' width='100'>
-  <h2>Full Stack Developer</h2>
-
-  <div id='bio-div'>
-    <span id='bio-text'>I recently graduated from Dev Bootcamp, where I learned the skills to make sophisticated web apps. I love solving problems, especially the puzzle-like kind that programmers face. I am extremely excited to take on interesting and challenging projects at a tech startup and continue growing as a developer.</span>
-  </div>
+  <div id='header-div'>
+    <h1>JACK FEELY</h1>
+    <img id='head-shot' src='./images/head-shot.png' alt="Head Shot" height='200px' width='200'>
+    <h2>Full Stack Developer</h2>
+    <span id='header-text'>I recently graduated from Dev Bootcamp, where I learned the skills to make sophisticated web apps. I love solving problems, especially the puzzle-like kind that programmers face. I am eager to take on interesting and challenging projects at a tech startup and continue growing as a developer.</span>
+  </div><br><span><h3>__________</h3></span><br>
 
   <div id='skills-div'>
-    <h2>Programming Skills</h2>
-    <span id='skills-text'>JavaScript, React.js, Ruby on Rails, Ruby, HTML, CSS</span>
-  </div>
+    <h2>PROGRAMMING SKILLS</h2>
+    <ul id='skills-list'>
+      <li>JavaScript</li>
+      <li>React.js</li>
+      <li>Node.js</li>
+      <li>Ruby</li>
+      <li>Ruby on Rails</li>
+      <li>HTML/CSS</li>
+      <li>ActiveRecord</li>
+      <li>PostgreSQL</li>
+      <li>SQL</li>
+    </ul>
+  </div><br><span><h3>__________</h3></span><br>
 
   <div id='projects-div'>
-    <h2>projects</h2>
+    <h2>PROJECTS</h2>
 
     <a href='http://www.state-matters.com' class='project-link'>
       <div class='project-div'>
-        <h3>State Matters</h3>
+        <h2 class='project-title'>State Matters</h2>
+        <img src='./images/state-matters-home.png' alt="State Matters Home Page" height='75%' width='75%'><br>
         <span class='project-text'>State Matters gives you a clear picture of your local state senator's voting record.</span>
       </div>
     </a>
 
     <a href='http://dean-sets.herokuapp.com' class='project-link'>
       <div class='project-div'>
-        <h3>Dean Sets</h3>
+        <h2 class='project-title'>Dean Sets</h2>
+        <img src='./images/dean-sets.png' alt="Dean Sets" height='75%' width='75%'><br>
         <span class='project-text'>JavaScript web app adaptation of pattern-seeking card game Sets.</span>
       </div>
     </a>
 
     <a href='https://github.com/jackfeely/treat-yoselves' class='project-link'>
       <div class='project-div'>
-        <h3>Treat Yoselves</h3>
+        <h3 class='project-title'>Treat Yoselves</h3>
         <span class='project-text'>Group route planner.</span>
       </div>
     </a>
