@@ -18,48 +18,49 @@
   <div id='skills-div'>
     <h2>PROGRAMMING SKILLS</h2>
     <ul id='skills-list'>
-      <li>JavaScript</li>
-      <li>React.js</li>
-      <li>Node.js</li>
-      <li>Ruby</li>
-      <li>Ruby on Rails</li>
-      <li>HTML/CSS</li>
-      <li>ActiveRecord</li>
-      <li>PostgreSQL</li>
-      <li>SQL</li>
+      <li class='skill-li'>JavaScript</li>
+      <li class='skill-li'>React.js</li>
+      <li class='skill-li'>Node.js</li>
+      <li class='skill-li'>Ruby</li>
+      <li class='skill-li'>Ruby on Rails</li>
+      <li class='skill-li'>HTML/CSS</li>
+      <li class='skill-li'>ActiveRecord</li>
+      <li class='skill-li'>PostgreSQL</li>
+      <li class='skill-li'>SQL</li>
     </ul>
+    <p>(click on skills to filter projects)</p>
   </div><br><p><h3>__________</h3></p><br>
 
   <div id='projects-div'>
     <h2>PROJECTS</h2>
 
     <a href='http://www.state-matters.com' class='project-link'>
-      <div class='project-div'>
+      <div class='project-div' skills='JavaScript, React.js, Node.js, HTML/CSS'>
         <h2 class='project-title'>State Matters</h2>
         <img src='./images/state-matters-home.png' alt="State Matters Home Page" height='75%' width='75%'><br>
-        <p class='project-text'>State Matters gives you a clear picture of your local state senator's voting record.</p>
+        <p class='project-text'>For New York state residents, enter your address to see a clear picture of your local state senator's voting record.</p>
       </div>
     </a>
 
     <a href='http://dean-sets.herokuapp.com' class='project-link'>
-      <div class='project-div'>
+      <div class='project-div' skills='JavaScript, React.js, Ruby on Rails, Ruby, HTML/CSS, ActiveRecord'>
         <h2 class='project-title'>Dean Sets</h2>
         <img src='./images/dean-sets.png' alt="Dean Sets" height='75%' width='75%'><br>
-        <p class='project-text'>Pattern-seeking card game: find all the 3-card 'sets' to win!<br> A valid set has to meet all of the following conditions</p>
-          <ol>
-            <li>all 3 have the same color, or all 3 have different colors</li>
-            <li>all 3 have the same shape, or all 3 have different shapes</li>
-            <li>all 3 have the same shading, or all 3 have different shading</li>
-            <li>all 3 have the same number, or all 3 have different numbers</li>
-          </ul>
-        </p>
+        <p class='project-text'>Pattern-seeking card game: find all the 3-card 'sets' to win!</p>
+<!--         <ul id='dean-sets-list'>
+          <li class='dean-sets-rule-li'>all 3 have the same <b>color</b>, or all 3 have different <b>colors</b></li>
+          <li class='dean-sets-rule-li'>all 3 have the same <b>shape</b>, or all 3 have different <b>shapes</b></li>
+          <li class='dean-sets-rule-li'>all 3 have the same <b>shading</b>, or all 3 have different <b>shading</b></li>
+          <li class='dean-sets-rule-li'>all 3 have the same <b>number</b>, or all 3 have different <b>numbers</b></li>
+        </ul> -->
       </div>
     </a>
 
     <a href='https://github.com/jackfeely/treat-yoselves' class='project-link'>
-      <div class='project-div'>
-        <h3 class='project-title'>Treat Yoselves</h3>
-        <p class='project-text'>Group route planner--plug in </p>
+      <div class='project-div' skills='JavaScript, React.js, Node.js, HTML/CSS'>
+        <h2 class='project-title'>Treat Yoselves</h2>
+        <img src='./images/state-matters-bills.png' alt="State Matters Home Page" height='75%' width='75%'><br>
+        <p class='project-text'>Plug in a destination, have friends plug in a few more, and the app will build the optimal path connecting each point.</p>
       </div>
     </a>
   </div>

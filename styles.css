@@ -14,14 +14,27 @@ p {
 
 #skills-list {
   list-style: none;
-}
-
-#skills-list {
   column-count: 3;
+  padding: 0;
 }
 
 li {
   font-size: 17px;
+}
+
+.skill-li {
+  margin-bottom: 10px;
+}
+
+.skill-li:hover {
+  background-color: #add8e6;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.highlight-skill {
+  background-color: #add8e6;
+  font-weight: bold;
 }
 
 .project-title {
@@ -35,7 +48,7 @@ li {
 }
 
 .project-div:hover {
-  background: #F0F8FF;
+  background: #add8e6;
 }
 
 .project-link {
@@ -43,11 +56,11 @@ li {
   text-decoration: none;
 }
 
-ol {
-  
+/*#dean-sets-list {
+  display: inline-block;
 }
 
-/*.project-text {
-  display: inline-block;
-  margin-bottom: 20px;
-}*/
+.dean-sets-rule-li {
+  text-align: left;
+}
+*/
