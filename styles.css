@@ -34,8 +34,9 @@ li {
 
 .highlight-skill {
   background-color: #add8e6;
+  color: #cf5300;
   font-weight: bold;
-  font-size: 20px;
+  /*font-size: 20px;*/
 }
 
 .project-title {

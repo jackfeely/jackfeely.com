@@ -13,6 +13,7 @@ $(document).ready(function(){
     }
 
     flash($('#projects-div'));
+    displayFilteredProjectsHeader(skillsFilter);
     displayFilteredProjects(skillsFilter);
 
   });
@@ -25,9 +26,28 @@ $(document).ready(function(){
       if (opacity <= 0) clearInterval(interval);
       $(element).css({background: "rgba(" + color + ", " + opacity/100 + ")"});
     }, 30)
-  };
+  }
+
+  function displayFilteredProjectsHeader(skillsFilter) {
+    if (skillsFilter.length === 0) {
+      skillsFilterString = '';
+    }
+    else if (skillsFilter.length === 1) {
+      skillsFilterString = skillsFilter.join();
+    }
+    else if (skillsFilter.length === 2) {
+      skillsFilterString = skillsFilter.join(' & ');
+    }
+    else {
+      skillsFilterString = skillsFilter.slice(0, skillsFilter.length-1).join(', ') + ' & ' + skillsFilter[skillsFilter.length-1]
+    }
+
+    $('#skills-filter-header').remove();
+    $('#projects-div').prepend("<h3 id='skills-filter-header'>" + skillsFilterString + "</h3>");
+  }
 
   function displayFilteredProjects(skillsFilter) {
+
     $('.project-div').each(function(projectDiv){
       var projectSkills = $(this).attr('skills').split(', ');
 
