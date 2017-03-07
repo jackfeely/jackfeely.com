@@ -12,9 +12,20 @@ $(document).ready(function(){
       skillsFilter.push(skill);
     }
 
+    flash($('#projects-div'));
     displayFilteredProjects(skillsFilter);
 
   });
+
+  function flash(element) {
+    var opacity = 100;
+    var color = "173, 216, 230" // has to be in this format since we use rgba
+    var interval = setInterval(function() {
+      opacity -= 3;
+      if (opacity <= 0) clearInterval(interval);
+      $(element).css({background: "rgba(" + color + ", " + opacity/100 + ")"});
+    }, 30)
+  };
 
   function displayFilteredProjects(skillsFilter) {
     $('.project-div').each(function(projectDiv){
